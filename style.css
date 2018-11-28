@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  background: lightblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contMail, .contDadi {
+  background: lightgrey;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.griglia {
+  height: 400px;
+  width: 400px;
+  background: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.elem {
+  flex-shrink: 0;
+  /* width: 50px;
+  height: 50px; */
+  border: 1px solid black;
+}
+h2 {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  /* border-top: .5px solid grey; */
+}
+#verde {
+  color: green;
+}
+#rosso {
+  color: red;
+}
+.active:hover {
+  background: lightcoral;
+  color: black;
+}
+.white {
+  color: white;
+}
+.botton-n {
+  background: lightblue;
+  border-radius: 3px;
+  border: .5px solid black;
+  padding: 2px;
+  width: 100px;
+  height: 100px;
+  color: black;
+}
+.pippo {
+  color: purple;
+  background: lightgrey;
+}
+.cerchio {
+  background: orange;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  padding: 40px 5px;;
+}
+.cerchio h1 {
+  color: black;
+  font-size: 10px;
+  width: 100%;
+}
+.sipario {
+  width: 100vw;
+  height: 100vh;
+  background: red;
+  display: none;
+}
+p {
+  display: none;
+}
+#check {
+  display: none;
+}
+.green {
+  background: green;
+}
+.red {
+  background: red;
+}
+.select {
+}
