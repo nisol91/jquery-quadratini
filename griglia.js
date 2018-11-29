@@ -47,13 +47,18 @@ let count_g = 0;//se non usavo let non sapevo come uscirne
 let count_r = 0;
 
 $('.elem').click(function() {
-  if ($(this).hasClass('select')) {
+  if ($(this).hasClass('cliccato')) {
+    alert('non puoi cliccare due volte')
+  } else if ($(this).hasClass('select')) {
     $(this).addClass('red')
     count_r += 1;
+    $(this).addClass('cliccato')
   } else {
     $(this).addClass('green')
     count_g += 1;
+    $(this).addClass('cliccato')
   }
+
   console.log(count_g);
   console.log(count_r);
   $('.punteggio_g').html('Numero caselle verdi: ' + count_g)
@@ -63,10 +68,10 @@ $('.elem').click(function() {
 //-------------------------------------------
 //FUNZIONE II (nero se ci passi sopra)
 
-$('.elem').mouseenter(function() {
-  if ($(this).hasClass('black')) {
-    $(this).removeClass('black')
-  } else {
-    $(this).addClass('black')
-  }
-});
+// $('.elem').mouseenter(function() {
+//   if ($(this).hasClass('black')) {
+//     $(this).removeClass('black')
+//   } else {
+//     $(this).addClass('black')
+//   }
+// });
