@@ -27,7 +27,7 @@
 .griglia {
   height: 400px;
   width: 400px;
-  background: lightgrey;
+  /* background: lightgrey; */
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
@@ -37,6 +37,8 @@
   /* width: 50px;
   height: 50px; */
   border: 1px solid black;
+  margin: 0;
+  padding: 0;
 }
 h2 {
   width: 100%;
@@ -101,4 +103,7 @@ p {
   background: red;
 }
 .select {
+}
+.black {
+  background: black;
 }

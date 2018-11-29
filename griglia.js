@@ -7,6 +7,7 @@
 
 //----------------------------------------------
 //CREAZIONE GRIGLIA nxn
+
 var righe = parseInt(prompt('Quante righe?'))
 var colonne = parseInt(prompt('Quante colonne?'))
 
@@ -40,7 +41,7 @@ while (i < 15) {
 }
 
 //-------------------------------------------
-//FUNZIONE
+//FUNZIONE I (verdi & rossi)
 
 let count_g = 0;//se non usavo let non sapevo come uscirne
 let count_r = 0;
@@ -57,4 +58,15 @@ $('.elem').click(function() {
   console.log(count_r);
   $('.punteggio_g').html('Numero caselle verdi: ' + count_g)
   $('.punteggio_r').html('Numero caselle rosse: ' + count_r)
+});
+
+//-------------------------------------------
+//FUNZIONE II (nero se ci passi sopra)
+
+$('.elem').mouseenter(function() {
+  if ($(this).hasClass('black')) {
+    $(this).removeClass('black')
+  } else {
+    $(this).addClass('black')
+  }
 });
